@@ -82,8 +82,8 @@ nrow(otree$Chats)
 # Delete all cases that didn't end the experiment on the page "Demographics"
 # within the app "survey"
 otree2 <- delete_dropouts(otree,
-                         final_apps = c("survey"),
-                         final_pages = c("Demographics"),
+                         final_apps = "survey",
+                         final_pages = "Demographics",
                          info = TRUE)
 
 # Check row numbers again
@@ -95,7 +95,6 @@ nrow(otree2$Chats)
 
 ## ----collapse=TRUE------------------------------------------------------------
 head(otree2$info$deleted_cases$full)
-
 
 otree2$info$deleted_cases$unique
 
