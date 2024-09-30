@@ -7,7 +7,7 @@ path <- system.file("extdata/exp_data_5.4.0", package = "gmoTree")
 
 # Import without specifications
 # Import all oTree files in this folder and its subfolders
-otree <- gmoTree::import_otree(path = path)
+otree <- import_otree(path = path)
 
 # Check the structure of the oTree list of data frames
 str(otree, 1)
@@ -33,7 +33,7 @@ otree$info$initial_n
 
 ## ----collapse=TRUE------------------------------------------------------------
 # Import data from different oTree versions
-otree_all <- gmoTree::import_otree(
+otree_all <- import_otree(
   path = system.file("extdata", package = "gmoTree"))
 
 # Check names of Time data frame
@@ -97,7 +97,6 @@ nrow(otree2$Chats)
 head(otree2$info$deleted_cases$full)
 
 otree2$info$deleted_cases$unique
-
 
 otree2$info$deleted_cases$all_end
 
@@ -231,7 +230,7 @@ otree2$all_apps_wide$survey.1.player.gender
 
 ## ----assignv_to_aaw,  collapse=TRUE-------------------------------------------
 # Create a new variable
-otree2$survey$younger30 <- ifelse(otree2$survey$player.age < 30, 0, 1)
+otree2$survey$younger30 <- ifelse(otree2$survey$player.age < 30, 1, 0)
 
 # Get variable younger30 from survey to all_apps_wide
 # and put the new variable right behind the old age variable

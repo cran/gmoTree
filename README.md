@@ -1,23 +1,22 @@
-# gmoTree – Get and Modify oTree Data <img src="man/figures/logo.png" align="right" >
+# gmoTree – Get and Modify oTree Data
 
 <!-- badges: start -->
 
 [![CRAN
 status](https://www.r-pkg.org/badges/version/gmoTree)](https://cran.r-project.org/package=gmoTree)
 [![R-CMD-check](https://github.com/ZauchnerP/gmoTree/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ZauchnerP/gmoTree/actions/workflows/R-CMD-check.yaml)
-[![CRAN RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/gmoTree?color=blue)](https://r-pkg.org/pkg/gmoTree)]
+[![CRAN RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/gmoTree?color=blue)](https://r-pkg.org/pkg/gmoTree)
 
 <!-- badges: end -->
 
 gmoTree is an R package developed for importing, merging, and
 efficiently managing data obtained from running
-<a href="https://www.otree.org/" target="_blank">oTree</a> experiments.
+<a href="https://www.otree.org/" target="_blank">oTree</a> (Chen et al., 2016) experiments.
 It’s particularly valuable when dealing with complex experimental
 designs that span multiple sessions and generate a large number of files
-that need to be integrated.
+that need to be integrated.[^1]
 
-gmoTree is not an official package of the oTree team, but it was created
-to complement the open-source platform.
+[^1]: gmoTree is not an official package of the oTree team but is built to complement the oTree open-source platform.
 
 # Installation
 
@@ -25,7 +24,7 @@ To install the CRAN version of this package, use the following command:
 
 `install.packages("gmoTree")`
 
-To install the development versions:
+To install the development version:
 
 `devtools::install_github("ZauchnerP/gmoTree")`
 
@@ -33,7 +32,7 @@ To install the development versions:
 
 See the page
 <a href="https://zauchnerp.github.io/gmoTree/articles/intro_to_gmoTree.html" target="_blank">Introduction
-to gmoTree</a> for a more detailed overview of the functions. 
+to gmoTree</a> for a more detailed overview of most of the functions. 
 For further details on the package as a whole, visit the 
 <a href="https://zauchnerp.github.io/gmoTree/" target="_blank">
 gmoTree website</a>.
@@ -44,10 +43,10 @@ gmoTree website</a>.
 
 ## Cleaning up data
 
-- `messy_chat()`: Checks for a messy Chats data frame and combines variables that refer to
+- `messy_chat()`: Checks for a messy `Chats` data frame and combines variables that refer to
 the same concept.
 
-- `messy_chat()`: Checks for a messy Time data frame and combines variables that refer to
+- `messy_chat()`: Checks for a messy `Time` data frame and combines variables that refer to
 the same concept.
 
 - `delete_duplicate()`: Deletes duplicate rows from all data frames in the oTree list.
@@ -90,14 +89,20 @@ apps.
 
 - `pagesec()`: Calculates the time spent on each page.
 
-# Transferring variables between the apps
+## Transferring variables between the apps
 
 - `assignv()`: Copies a variable from the all_apps_wide data frame to the data frames
 of all other apps.
 
-- `assignv_to_aaw()`: Copies a variable from one of your data frames to the all_apps_wide data
+- `assignv_to_aaw()`: Copies a variable from one of your data frames to the `all_apps_wide` data
 frame.
 
-# Before running the experiment
+## Before running the experiment
 
 - `show_constant()`: Shows constant variables.
+- `codebook()`: Creates a codebook based on the oTree code. See also the vignette <a href="https://zauchnerp.github.io/gmoTree/articles/codebook.html" target="_blank">"gmoTree Codebooks."</a>
+
+
+# References
+
+Chen, D. L., Schonger, M., & Wickens, C. (2016). oTree—An open-source platform for laboratory, online, and field experiments. Journal of Behavioral and Experimental Finance, 9, 88–97. https://doi.org/10.1016/j.jbef.2015.12.001
