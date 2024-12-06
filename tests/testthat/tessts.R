@@ -6927,7 +6927,6 @@ if (rlang::is_installed(c("withr", "testthat"))) {
         test3 <- !is.null(output$max_duration) & !is.na(output$max_duration)
         test4 <- exists("single_durations", output)
         testthat::expect_true(all(c(test1, test2, test3, test4)))
-
       })
 
       testthat::test_that("App time - one app:
@@ -7188,7 +7187,6 @@ if (rlang::is_installed(c("withr", "testthat"))) {
 
         # Run function
         output <- apptime(otree2)
-
         # Test
         test <- grepl("Durations not calculated", output$survey)
         testthat::expect_true(test)  # Die überall schön machen
@@ -8027,8 +8025,8 @@ if (rlang::is_installed(c("withr", "testthat"))) {
         # Run function and test
         testthat::expect_error(
           assignv(oTree = otree2,
-                  variable = c("survey.1.player.gender", "asdfasfd"),
-                  newvar = c("gender", "asfasdf")),
+                  variable = c("survey.1.player.gender", "somevar"),
+                  newvar = c("gender", "somenewvar")),
           "Plase enter only one variable name")
       })
 
@@ -8039,8 +8037,8 @@ if (rlang::is_installed(c("withr", "testthat"))) {
         # Run function and test
         testthat::expect_error(
           assignv(oTree = otree2,
-                  variable = "asdfasfd",
-                  newvar = c("gender", "asfasdf")),
+                  variable = "somevar",
+                  newvar = c("gender", "somenewvar")),
           "Plase enter only one new variable name")
       })
 
@@ -8152,9 +8150,9 @@ if (rlang::is_installed(c("withr", "testthat"))) {
         # Prepare data
         otree2 <- otree_5_4_0
 
-        # Create new variable
+        # Create new variable (delete first row)
         person <- otree2$survey$participant.code[1L]
-        otree2$survey <- otree2$survey[2L:nrow(otree2$survey), ]  # Delete first row
+        otree2$survey <- otree2$survey[2L:nrow(otree2$survey), ]
         otree2$survey$younger30 <- as.integer(otree2$survey$player.age < 30L)
 
         # Run function
@@ -8195,7 +8193,7 @@ if (rlang::is_installed(c("withr", "testthat"))) {
         testthat::expect_error(
           assignv_to_aaw(otree2,
                         app = "survey",
-                        variable = c("younger30", "asdfsadf"),
+                        variable = c("younger30", "wrongvarname"),
                         newvar = "younger30"),
          "Plase enter only one variable name!")
       })
@@ -8210,8 +8208,8 @@ if (rlang::is_installed(c("withr", "testthat"))) {
         testthat::expect_error(
           assignv_to_aaw(otree2,
                         app = "survey",
-                        variable = c("younger30", "asdfsadf"),
-                        newvar = c("younger30", "asdfasdf")),
+                        variable = c("younger30", "wrongvarname"),
+                        newvar = c("younger30", "wrongnewname")),
          "Plase enter only one variable name!")
       })
 
@@ -8225,7 +8223,7 @@ if (rlang::is_installed(c("withr", "testthat"))) {
           assignv_to_aaw(otree2,
                          app = "survey",
                          variable = "younger30",
-                         newvar = c("younger30", "asdfasdf")),
+                         newvar = c("younger30", "toomanynames")),
          "Plase enter only one new variable name!")
       })
 
