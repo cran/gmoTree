@@ -1,6 +1,6 @@
-6978c775efec133df2d610fa59afe606 *DESCRIPTION
+1213494d657d8ea20bac209778979036 *DESCRIPTION
 9e7f2341ed136dd9e9faf13a0f431d5f *NAMESPACE
-14d72a5f7179802795ecdfae1282e0f7 *NEWS.md
+d122c3129cdec4ce697e01560b458b0d *NEWS.md
 2774db6d9ac38b7cdada0e096b2e847f *R/apptime.R
 38eb424f28a3bfb1e5ed07acea466b1f *R/assignv.R
 4eb54a01c71c6fcab8ccf9f1a5677544 *R/assignv_to_aaw.R
@@ -23,14 +23,14 @@ f049e43642763df083a9346f1e7e57a9 *R/oTree.R
 8d784622a893713913bd44e009164ab4 *README.md
 31a50b1e0ae165e7718459209ffc2617 *build/vignette.rds
 37fdd835ee77a36d7fe94fffe62e5db0 *data/oTree.rda
-d6b2f8007cf2d77e5c344c514d6c4fc2 *inst/CITATION
+07a2a079dcbc095d7403eec5d2af9bba *inst/CITATION
 5ca9d886f441b17f4d707f2a1799a838 *inst/WORDLIST
 4678206cfd951c08396d36394e9bf1b5 *inst/doc/codebook.R
 69919bacb957672b7a1a2611ff90995f *inst/doc/codebook.Rmd
 0f68c7ad313d658744d67e49fd3c8abc *inst/doc/codebook.html
 14b3afbcad7642a64e0824bb2b179d70 *inst/doc/intro_to_gmoTree.R
 59528ff028d1ec664d6cc1849289a9b0 *inst/doc/intro_to_gmoTree.Rmd
-7f1da40bfc9c49c019c79ec26f0c4623 *inst/doc/intro_to_gmoTree.html
+0ed62d3e67695502c54d1f57ace33bb2 *inst/doc/intro_to_gmoTree.html
 cc48cf7a1058f55b135d10b1320b5faf *inst/extdata/bot_data/__temp_bots_Apr06_22h26m22.3s/all_apps_wide.csv
 233531e72dc41651193a2422d8dbd993 *inst/extdata/bot_data/__temp_bots_Apr06_22h26m22.3s/chatapp.csv
 60ebcb0bee46e69ef4b1e74266a4b066 *inst/extdata/bot_data/__temp_bots_Apr06_22h26m22.3s/dictator.csv
@@ -341,4 +341,4 @@ b8a0adb9966cdda459e121b38fabb9b7 *tests/testthat/tests_codebook.R
 2d18ae5eec468bd5d74439a1b2ceea4b *vignettes/intro.png
 59528ff028d1ec664d6cc1849289a9b0 *vignettes/intro_to_gmoTree.Rmd
 a97452b6b3e8d3013fa153354c39cda6 *vignettes/structure.png
-1a9d796e5105599b23c0a8c96829f559 *vignettes/title.PNG
+1a9d796e5105599b23c0a8c96829f559 *vignettes/title.png
