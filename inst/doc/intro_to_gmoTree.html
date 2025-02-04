@@ -451,7 +451,7 @@ all of the information provided in <code>oTree$info</code>.</p>
 <span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a><span class="do">## is there twice! (Advice: You may use delete_duplicate() to remove duplicate</span></span>
 <span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a><span class="do">## rows of all oTree data frames.</span></span>
 <span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a><span class="co"># Check the structure of the oTree list of data frames</span></span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a><span class="co"># Check the structure of the list of data frames</span></span>
 <span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a><span class="fu">str</span>(otree, <span class="dv">1</span>)</span>
 <span id="cb1-16"><a href="#cb1-16" tabindex="-1"></a><span class="do">## List of 8</span></span>
 <span id="cb1-17"><a href="#cb1-17" tabindex="-1"></a><span class="do">##  $ all_apps_wide:&#39;data.frame&#39;:   12 obs. of  60 variables:</span></span>
@@ -466,15 +466,15 @@ all of the information provided in <code>oTree$info</code>.</p>
 <span id="cb1-26"><a href="#cb1-26" tabindex="-1"></a><span class="co"># The initial info list</span></span>
 <span id="cb1-27"><a href="#cb1-27" tabindex="-1"></a>otree<span class="sc">$</span>info</span>
 <span id="cb1-28"><a href="#cb1-28" tabindex="-1"></a><span class="do">## $imported_files</span></span>
-<span id="cb1-29"><a href="#cb1-29" tabindex="-1"></a><span class="do">## [1] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpSKAiZx/Rinst515c559325d7/gmoTree/extdata/exp_data_5.4.0/ChatMessages-2023-05-16.csv&quot; </span></span>
-<span id="cb1-30"><a href="#cb1-30" tabindex="-1"></a><span class="do">## [2] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpSKAiZx/Rinst515c559325d7/gmoTree/extdata/exp_data_5.4.0/PageTimes-2023-05-16.csv&quot;    </span></span>
-<span id="cb1-31"><a href="#cb1-31" tabindex="-1"></a><span class="do">## [3] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpSKAiZx/Rinst515c559325d7/gmoTree/extdata/exp_data_5.4.0/survey_2023-05-16.csv&quot;       </span></span>
-<span id="cb1-32"><a href="#cb1-32" tabindex="-1"></a><span class="do">## [4] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpSKAiZx/Rinst515c559325d7/gmoTree/extdata/exp_data_5.4.0/start_2023-05-16.csv&quot;        </span></span>
-<span id="cb1-33"><a href="#cb1-33" tabindex="-1"></a><span class="do">## [5] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpSKAiZx/Rinst515c559325d7/gmoTree/extdata/exp_data_5.4.0/dictator_2023-05-16.csv&quot;     </span></span>
-<span id="cb1-34"><a href="#cb1-34" tabindex="-1"></a><span class="do">## [6] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpSKAiZx/Rinst515c559325d7/gmoTree/extdata/exp_data_5.4.0/dictator_2023-05-00.csv&quot;     </span></span>
-<span id="cb1-35"><a href="#cb1-35" tabindex="-1"></a><span class="do">## [7] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpSKAiZx/Rinst515c559325d7/gmoTree/extdata/exp_data_5.4.0/chatapp_2023-05-16.csv&quot;      </span></span>
-<span id="cb1-36"><a href="#cb1-36" tabindex="-1"></a><span class="do">## [8] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpSKAiZx/Rinst515c559325d7/gmoTree/extdata/exp_data_5.4.0/all_apps_wide_2023-05-16.csv&quot;</span></span>
-<span id="cb1-37"><a href="#cb1-37" tabindex="-1"></a><span class="do">## [9] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpSKAiZx/Rinst515c559325d7/gmoTree/extdata/exp_data_5.4.0/all_apps_wide-2023-05-16.csv&quot;</span></span>
+<span id="cb1-29"><a href="#cb1-29" tabindex="-1"></a><span class="do">## [1] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpCEcjlu/Rinstd110fc616b5/gmoTree/extdata/exp_data_5.4.0/ChatMessages-2023-05-16.csv&quot; </span></span>
+<span id="cb1-30"><a href="#cb1-30" tabindex="-1"></a><span class="do">## [2] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpCEcjlu/Rinstd110fc616b5/gmoTree/extdata/exp_data_5.4.0/PageTimes-2023-05-16.csv&quot;    </span></span>
+<span id="cb1-31"><a href="#cb1-31" tabindex="-1"></a><span class="do">## [3] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpCEcjlu/Rinstd110fc616b5/gmoTree/extdata/exp_data_5.4.0/survey_2023-05-16.csv&quot;       </span></span>
+<span id="cb1-32"><a href="#cb1-32" tabindex="-1"></a><span class="do">## [4] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpCEcjlu/Rinstd110fc616b5/gmoTree/extdata/exp_data_5.4.0/start_2023-05-16.csv&quot;        </span></span>
+<span id="cb1-33"><a href="#cb1-33" tabindex="-1"></a><span class="do">## [5] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpCEcjlu/Rinstd110fc616b5/gmoTree/extdata/exp_data_5.4.0/dictator_2023-05-16.csv&quot;     </span></span>
+<span id="cb1-34"><a href="#cb1-34" tabindex="-1"></a><span class="do">## [6] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpCEcjlu/Rinstd110fc616b5/gmoTree/extdata/exp_data_5.4.0/dictator_2023-05-00.csv&quot;     </span></span>
+<span id="cb1-35"><a href="#cb1-35" tabindex="-1"></a><span class="do">## [7] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpCEcjlu/Rinstd110fc616b5/gmoTree/extdata/exp_data_5.4.0/chatapp_2023-05-16.csv&quot;      </span></span>
+<span id="cb1-36"><a href="#cb1-36" tabindex="-1"></a><span class="do">## [8] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpCEcjlu/Rinstd110fc616b5/gmoTree/extdata/exp_data_5.4.0/all_apps_wide_2023-05-16.csv&quot;</span></span>
+<span id="cb1-37"><a href="#cb1-37" tabindex="-1"></a><span class="do">## [9] &quot;C:/Users/Lenovo/AppData/Local/Temp/RtmpCEcjlu/Rinstd110fc616b5/gmoTree/extdata/exp_data_5.4.0/all_apps_wide-2023-05-16.csv&quot;</span></span>
 <span id="cb1-38"><a href="#cb1-38" tabindex="-1"></a><span class="do">## </span></span>
 <span id="cb1-39"><a href="#cb1-39" tabindex="-1"></a><span class="do">## $initial_n</span></span>
 <span id="cb1-40"><a href="#cb1-40" tabindex="-1"></a><span class="do">## [1] 12</span></span></code></pre></div>
@@ -926,11 +926,11 @@ following example shows how much time the participants spent on the app
 <span id="cb28-14"><a href="#cb28-14" tabindex="-1"></a><span class="do">## 1    c9inx5wl mz2r27bk    0.250</span></span>
 <span id="cb28-15"><a href="#cb28-15" tabindex="-1"></a><span class="do">## 2    kr8yd7f3 mz2r27bk    0.233</span></span>
 <span id="cb28-16"><a href="#cb28-16" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb28-17"><a href="#cb28-17" tabindex="-1"></a><span class="do">## $messages</span></span>
-<span id="cb28-18"><a href="#cb28-18" tabindex="-1"></a><span class="do">## [1] &quot;For some participants, no duration could be calculated. See list in $warnings.&quot;</span></span>
+<span id="cb28-17"><a href="#cb28-17" tabindex="-1"></a><span class="do">## $warnings</span></span>
+<span id="cb28-18"><a href="#cb28-18" tabindex="-1"></a><span class="do">## [1] &quot;dhgisush&quot; &quot;p6m495xi&quot;</span></span>
 <span id="cb28-19"><a href="#cb28-19" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb28-20"><a href="#cb28-20" tabindex="-1"></a><span class="do">## $warnings</span></span>
-<span id="cb28-21"><a href="#cb28-21" tabindex="-1"></a><span class="do">## [1] &quot;dhgisush&quot; &quot;p6m495xi&quot;</span></span></code></pre></div>
+<span id="cb28-20"><a href="#cb28-20" tabindex="-1"></a><span class="do">## $messages</span></span>
+<span id="cb28-21"><a href="#cb28-21" tabindex="-1"></a><span class="do">## [1] &quot;For some participants, no duration could be calculated. See list in $warnings.&quot;</span></span></code></pre></div>
 <p>We can also get the time for specific participants only. Without
 specifying the applications, we get the duration for all applications
 individually.</p>
@@ -1080,17 +1080,22 @@ variable <code>survey.1.player.age</code>.</p>
 <h1>Before running the experiment</h1>
 <div id="show_constant" class="section level2">
 <h2>show_constant()</h2>
-<p>When we program experiments, we frequently add variables that turn
-out to be useless later. When we forget to remove them, especially in
-experiments with numerous rounds, the data frame becomes unreasonably
-huge. With the function <code>show_constant()</code>, we may identify
-variables that have no variation and remove them before the experiment.
-In the following example, a variable named <code>constant</code> is
-created, which does not vary. The function <code>show_constant()</code>
-shows us many variables that are also unchanging; however, we cannot
-delete most of them because they are oTree internal. Yet, to prevent an
-unreasonably large data frame, we should remove the variable
-<code>constant</code> before running the experiment.</p>
+<p>When programming experiments, we often add variables that later prove
+unnecessary. If we forget to remove them, especially in multi-round
+experiments, the resulting data frames can become disproportionately
+large.</p>
+<p>The <code>show_constant()</code> function helps identify unused
+variables, enabling their removal before running the experiment. To use
+this function, you should create a sample data frame from your oTree
+code, e.g., by using bots, that can then be checked for variables
+without variation.</p>
+<p>In the following example, a variable named <code>constant</code> is
+created, which does not vary. The <code>show_constant()</code> function
+highlights this variable, along with several others that also lack
+variation. However, the other variables cannot be easily deleted from
+your oTree code as they are built-in variables automatically generated
+by oTree. Therefore, we can only delete the <code>constant</code>
+variable from our original oTree code.</p>
 <div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" tabindex="-1"></a><span class="co"># Make a constant column (this variable is usually created in oTree)</span></span>
 <span id="cb35-2"><a href="#cb35-2" tabindex="-1"></a>otree2<span class="sc">$</span>dictator<span class="sc">$</span>constant <span class="ot">&lt;-</span> <span class="dv">3</span></span>
 <span id="cb35-3"><a href="#cb35-3" tabindex="-1"></a></span>

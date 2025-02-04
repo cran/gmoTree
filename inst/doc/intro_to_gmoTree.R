@@ -9,7 +9,7 @@ path <- system.file("extdata/exp_data_5.4.0", package = "gmoTree")
 # Import all oTree files in this folder and its subfolders
 otree <- import_otree(path = path)
 
-# Check the structure of the oTree list of data frames
+# Check the structure of the list of data frames
 str(otree, 1)
 
 # The initial info list

@@ -1,15 +1,14 @@
 ## ----collapse=TRUE, include=FALSE---------------------------------------------
 library(gmoTree)
 
-## ----cornout codebook---------------------------------------------------------
+## ----cournot codebook---------------------------------------------------------
 # Create the codebook list
-cbook <- codebook(path = system.file(path = "extdata/ocode_new", 
-                                     package = "gmoTree"), 
-                  output = "list", 
+cbook <- codebook(path = system.file(path = "extdata/ocode_new",
+                                     package = "gmoTree"),
+                  output = "list",
                   doc_info = FALSE)
 
-
-str(cbook, 1)  # Show all apps 
+str(cbook, 1)  # Show all apps
 print(cbook$cournot)  # Only show cournot app
 
 ## ----one app------------------------------------------------------------------
