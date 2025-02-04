@@ -1,6 +1,6 @@
 Package: gmoTree
 Title: Get and Modify 'oTree' Data
-Version: 1.4.0
+Version: 1.4.1
 Date: 2025-02-04
 Authors@R: 
     person("Patricia F.", "Zauchner", , "patricia.zauchner@gmx.at", role = c("aut", "trl", "cre", "cph"),
@@ -32,9 +32,9 @@ Encoding: UTF-8
 LazyData: true
 NeedsCompilation: no
 RoxygenNote: 7.3.2
-Packaged: 2025-02-04 17:19:59 UTC; Lenovo
+Packaged: 2025-02-04 19:08:42 UTC; Lenovo
 Author: Patricia F. Zauchner [aut, trl, cre, cph]
     (<https://orcid.org/0000-0002-5938-1683>)
 Maintainer: Patricia F. Zauchner <patricia.zauchner@gmx.at>
 Repository: CRAN
-Date/Publication: 2025-02-04 17:40:05 UTC
+Date/Publication: 2025-02-04 22:40:07 UTC
